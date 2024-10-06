@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/static/css/main.77fee67e.css",
+    "main.js": "/static/js/main.36103914.js",
+    "static/js/453.c206a226.chunk.js": "/static/js/453.c206a226.chunk.js",
+    "static/media/spin.png": "/static/media/spin.c093de9d611abf4ed9dd.png",
+    "static/media/logan.png": "/static/media/logan.efe9961fe775424916b8.png",
+    "static/media/onix-plus.png": "/static/media/onix-plus.720099cba97e7264c66c.png",
+    "static/media/sandero.png": "/static/media/sandero.9ac9e5bfb6f3152e5dc2.png",
+    "static/media/versa.png": "/static/media/versa.975a908bb48236306be5.png",
+    "static/media/Prius.png": "/static/media/Prius.c46994a08121e93c604e.png",
+    "static/media/cronos.png": "/static/media/cronos.076c38badd350c5ffc26.png",
+    "static/media/virtus.png": "/static/media/virtus.dd28f1058427537666ff.png",
+    "static/media/duster.png": "/static/media/duster.89453e9688a3bacd746a.png",
+    "static/media/prisma.png": "/static/media/prisma.a90a90c116af423bc82e.png",
+    "static/media/Ioniq.png": "/static/media/Ioniq.6ae77292cc4359260177.png",
+    "static/media/polo.png": "/static/media/polo.73f9bb0e04400871ae48.png",
+    "static/media/gol.png": "/static/media/gol.81f46f19bb83602f1eab.png",
+    "static/media/voyage.png": "/static/media/voyage.80607663eb4cf9dc6d82.png",
+    "static/media/corrolaCross.png": "/static/media/corrolaCross.019bc2360dff01f86545.png",
+    "static/media/etios.png": "/static/media/etios.d553c533f5d52c2f8444.png",
+    "static/media/corolla.png": "/static/media/corolla.84af605f200304855588.png",
+    "static/media/2.png": "/static/media/2.3b72d834ab5ef0b2ce8a.png",
+    "static/media/1.png": "/static/media/1.c7b2d909baac2123ef44.png",
+    "static/media/hero-image.jpg": "/static/media/hero-image.c1d031c07b95df154027.jpg",
+    "index.html": "/index.html",
+    "main.77fee67e.css.map": "/static/css/main.77fee67e.css.map",
+    "main.36103914.js.map": "/static/js/main.36103914.js.map",
+    "453.c206a226.chunk.js.map": "/static/js/453.c206a226.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.77fee67e.css",
+    "static/js/main.36103914.js"
+  ]
+}
