@@ -1,0 +1,64 @@
+/* Navbar.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: var(--primary-dark-blue); /* Usando cor da sua paleta */
+  padding: 15px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.logo {
+  color: var(--primary-yellow); /* Usando amarelo para o logo */
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 20px; /* Espaçamento entre os itens */
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: var(--primary-white); /* Cor dos links */
+  font-size: 1.1rem;
+  transition: color 0.3s ease; /* Efeito de transição */
+}
+
+.nav-links a:hover {
+  color: var(--primary-light-blue); /* Muda a cor ao passar o mouse */
+}
+
+/* Estilos para telas menores */
+@media (max-width: 768px) {
+  .nav-links {
+      flex-direction: column; /* Coloca os links em coluna */
+      display: none; /* Oculta os links inicialmente */
+      position: absolute;
+      background-color: var(--primary-dark-blue);
+      top: 60px; /* Posiciona abaixo da barra de navegação */
+      right: 0;
+      width: 100%;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+
+  .nav-links.active {
+      display: flex; /* Mostra os links quando a classe 'active' é adicionada */
+  }
+
+  .nav-links li {
+      margin: 10px 0; /* Espaçamento entre os itens em coluna */
+  }
+
+  .navbar {
+      flex-direction: column; /* Torna a navbar vertical em telas menores */
+  }
+}

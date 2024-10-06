@@ -1,0 +1,130 @@
+.carros {
+    padding: 40px 20px;
+    background-color: #f8f9fa; /* Fundo claro */
+    text-align: center;
+}
+
+.carros h2 {
+    font-size: 2.5rem;
+    margin-bottom: 30px;
+    color: #0056b3; /* Azul mais escuro */
+    font-weight: bold;
+    text-shadow: 1px 1px 5px rgba(0, 0, 0, 0.1); /* Sombra leve no título */
+}
+
+.carros-list {
+    display: grid;
+    grid-template-columns: 1fr; /* Alinha cada categoria em uma única coluna */
+    gap: 15px;
+    justify-items: center; /* Centraliza os itens no grid */
+    padding: 0; /* Remover padding adicional */
+}
+
+.categoria {
+    width: 100%;
+    padding: 20px;
+    max-width: 900px;
+    background-color: #ffffff; /* Fundo branco */
+    border-radius: 20px;
+    justify-content: space-between;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s; /* Transição mais suave */
+    display: flex; /* Adicionar flex para centralizar itens */
+    flex-direction: column; /* Colocar itens em coluna */
+    align-items: center; /* Centralizar itens horizontalmente */
+}
+
+.categoria:hover {
+    transform: scale(1.03); /* Efeito de hover */
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Sombra mais intensa */
+}
+
+.carros-grid {
+    display: flex; /* Exibir carros em linha */
+    flex-wrap: wrap; /* Permitir que quebrem para a linha seguinte */
+    justify-content: center; /* Centralizar os itens */
+    gap: 10px; /* Espaçamento entre as imagens */
+    padding: 40px; /* Padding para o grid */
+}
+
+.carro {
+    background-color: #fff;
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.2s, box-shadow 0.2s;
+    flex: 0 0 150px; /* Tamanho dos carros */
+    min-width: 150px; /* Largura mínima */
+    cursor: pointer; /* Mostrar que é clicável */
+}
+
+.carro:hover {
+    transform: translateY(-5px); /* Efeito de elevação */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+.carro-imagem {
+    width: 100%; /* Mantém a largura total do contêiner */
+    height: auto;
+    border-radius: 1px; /* Bordas arredondadas nas imagens */
+    transition: transform 0.3s;
+}
+
+.categoria h3 {
+    font-size: 1.6rem;
+    color: #0056b3; /* Azul mais escuro */
+    margin-bottom: 10px;
+    font-weight: bold; /* Destacar o título da categoria */
+}
+
+.categoria h4 {
+    font-size: 1.1rem;
+    color: #555; /* Cinza escuro para melhor legibilidade */
+    margin-top: 10px;
+    font-weight: normal; /* Peso de fonte normal para os nomes dos carros */
+}
+
+@media (max-width: 768px) {
+    .carros {
+        padding: 20px; /* Reduzir o padding em telas menores */
+    }
+
+    .carros h2 {
+        font-size: 2rem; /* Ajusta o tamanho da fonte para dispositivos menores */
+    }
+
+    .carros-list {
+        grid-template-columns: 1fr; /* Muda para uma coluna em telas menores */
+    }
+
+    .carro {
+        flex: 0 0 150px; /* Ajustar tamanho dos carros em telas menores */
+        min-width: 120px; /* Largura mínima em telas menores */
+    }
+}
+
+/* Estilo para o modal de zoom */
+.modal {
+    display: flex; /* Para centralizar o conteúdo */
+    position: fixed; /* Fica fixo na tela */
+    z-index: 1000; /* Colocado na frente */
+    left: 0;
+    top: 0;
+    width: 100%; /* Largura total da tela */
+    height: 100%; /* Altura total da tela */
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo escuro semitransparente */
+    justify-content: center; /* Centralizar conteúdo */
+    align-items: center; /* Centralizar conteúdo */
+}
+
+.modal img {
+    max-width: 80%; /* Imagem ocupa até 80% da largura da tela */
+    max-height: 80%; /* Imagem ocupa até 80% da altura da tela */
+    border-radius: 12px; /* Bordas arredondadas */
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2); /* Sombra na imagem */
+    transition: transform 0.3s; /* Transição suave ao exibir */
+}
+
+.modal img:hover {
+    transform: scale(1.05); /* Efeito de zoom na imagem do modal */
+}
